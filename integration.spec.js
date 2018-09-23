@@ -10,7 +10,8 @@ describe('adapter integration', () => {
             .then((houses) => {
                 expect(houses.length).to.equals(1);
                 const house = houses[0];
-                expect(house.address).to.equals('Example street, 10');
+                expect(house.street).to.equals('Example street');
+                expect(house.number).to.equals(10);
                 expect(house.description).to.equals('Fantastic house');
             });
     });

@@ -3,7 +3,8 @@ function Server() {
     function getHouses() {
         return [
             {
-                address: 'Example street, 10',
+                street: 'Example street',
+                number: 10,
                 description: 'Fantastic house'
             }
         ]
